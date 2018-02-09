@@ -1,0 +1,47 @@
+//
+//  AFNHTTPManager.m
+//
+//  Copyright © 2017年 苏州盛世十月 ( https://www.ssoct.cn )
+//
+
+#ifndef OCT_pch
+#define OCT_pch
+
+//$(SRCROOT)/$(PROJECT)/General/OCT.pch   Prefix Header 中配置
+
+#pragma mark - 界面相关
+//发布版本号
+#define APPVersionNumber                    [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+//屏幕rect
+#define ScreenRect                          [UIScreen mainScreen].bounds
+
+//屏幕宽度
+#define ScreenWidth                         [UIScreen mainScreen].bounds.size.width
+
+//屏幕高度
+#define ScreenHeight                        [UIScreen mainScreen].bounds.size.height
+
+#define HeightScale(height)                 (ScreenHeight > 1200 ? WidthScale(height) : height*ScreenHeight/1334.0*2)
+
+#define WidthScale(width)                   width*ScreenWidth/750.0*2
+
+//16进制颜色
+#define ColorFromHex(hex)                   [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16))/255.0 green:((float)((hex & 0xFF00) >> 8))/255.0 blue:((float)(hex & 0xFF))/255.0 alpha:1.0]
+
+//拿到控制器
+#define Storyboard(name,id)                 [[UIStoryboard storyboardWithName:name bundle:nil] instantiateViewControllerWithIdentifier:id]
+
+#define UserAccount [[NSUserDefaults standardUserDefaults] boolForKey:@"Account"]
+
+#pragma mark - 全局文字设置
+
+#define TitleFont                           15.0f
+#define DetailFont                          14.0f
+
+#define TitleColor                          0x323232
+#define DetailColor                         0x646464
+#define RedColor                            0xdb3731
+#define GlobalGrey                          ColorFromHex(0xf2f2f2)
+
+#endif /* OCT_pch */

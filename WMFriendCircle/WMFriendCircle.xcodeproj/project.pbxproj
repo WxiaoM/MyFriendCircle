@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0271EF6D200CA04100D7F7BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EF6C200CA04100D7F7BB /* AppDelegate.m */; };
+		0271EF70200CA04100D7F7BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EF6F200CA04100D7F7BB /* ViewController.m */; };
+		0271EF73200CA04100D7F7BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0271EF71200CA04100D7F7BB /* Main.storyboard */; };
+		0271EF75200CA04100D7F7BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0271EF74200CA04100D7F7BB /* Assets.xcassets */; };
+		0271EF78200CA04100D7F7BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0271EF76200CA04100D7F7BB /* LaunchScreen.storyboard */; };
+		0271EF7B200CA04100D7F7BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EF7A200CA04100D7F7BB /* main.m */; };
+		0271EF85200CA04200D7F7BB /* WMFriendCircleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EF84200CA04200D7F7BB /* WMFriendCircleTests.m */; };
+		0271EF90200CA04200D7F7BB /* WMFriendCircleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EF8F200CA04200D7F7BB /* WMFriendCircleUITests.m */; };
+		0271EFBC200CA0F400D7F7BB /* OCTBaseCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EFAD200CA0EE00D7F7BB /* OCTBaseCircleViewController.m */; };
+		0271EFBD200CA0F700D7F7BB /* OCTAddDynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EFAB200CA0EE00D7F7BB /* OCTAddDynamicViewController.m */; };
+		0271EFBE200CA0FA00D7F7BB /* OCTMediaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EFA5200CA0EE00D7F7BB /* OCTMediaManager.m */; };
+		0271EFBF200CA0FD00D7F7BB /* OCTMediaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EFA7200CA0EE00D7F7BB /* OCTMediaModel.m */; };
+		0271EFC0200CA0FE00D7F7BB /* UIView+MediaExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EFA9200CA0EE00D7F7BB /* UIView+MediaExt.m */; };
+		0271EFC1200CA10200D7F7BB /* OCTCircleCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EFA0200CA0EE00D7F7BB /* OCTCircleCommentModel.m */; };
+		0271EFC2200CA10400D7F7BB /* OCTCircleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EFA2200CA0EE00D7F7BB /* OCTCircleModel.m */; };
+		0271EFC5200CA15200D7F7BB /* OCTMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EFC4200CA15200D7F7BB /* OCTMember.m */; };
+		0271EFCB200CA1E400D7F7BB /* OCTTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EFC9200CA1E400D7F7BB /* OCTTextView.m */; };
+		0271EFD0200CA39B00D7F7BB /* OCTMediaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EFB0200CA0EE00D7F7BB /* OCTMediaCell.m */; };
+		0271EFD1200CA39D00D7F7BB /* OCTSelectMediaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EFB2200CA0EE00D7F7BB /* OCTSelectMediaView.m */; };
+		0271EFD2200CA3A900D7F7BB /* OCTCircleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EFB5200CA0EE00D7F7BB /* OCTCircleCell.m */; };
+		0271EFD3200CA3AB00D7F7BB /* OCTCountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EFB7200CA0EE00D7F7BB /* OCTCountCell.m */; };
+		0271EFD4200CA3AD00D7F7BB /* OCTCountTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EFB9200CA0EE00D7F7BB /* OCTCountTextView.m */; };
+		0271EFD5200CA3AF00D7F7BB /* OCTPictureImgControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271EFBB200CA0EE00D7F7BB /* OCTPictureImgControl.m */; };
+		1DAE77B203BB57C4E936965F /* libPods-WMFriendCircleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2DE7968CE9C6F460A012D0 /* libPods-WMFriendCircleUITests.a */; };
+		32DDAD665FED4EE3DED58E56 /* libPods-WMFriendCircle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6AD084858DF2B844299651 /* libPods-WMFriendCircle.a */; };
+		F210D1D488B67A96C4FA81DD /* libPods-WMFriendCircleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54758A0B7ED55BAA8B510568 /* libPods-WMFriendCircleTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0271EF81200CA04200D7F7BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0271EF60200CA04100D7F7BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0271EF67200CA04100D7F7BB;
+			remoteInfo = WMFriendCircle;
+		};
+		0271EF8C200CA04200D7F7BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0271EF60200CA04100D7F7BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0271EF67200CA04100D7F7BB;
+			remoteInfo = WMFriendCircle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0271EF68200CA04100D7F7BB /* WMFriendCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMFriendCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0271EF6B200CA04100D7F7BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0271EF6C200CA04100D7F7BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0271EF6E200CA04100D7F7BB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0271EF6F200CA04100D7F7BB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0271EF72200CA04100D7F7BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0271EF74200CA04100D7F7BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0271EF77200CA04100D7F7BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0271EF79200CA04100D7F7BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0271EF7A200CA04100D7F7BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0271EF80200CA04200D7F7BB /* WMFriendCircleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WMFriendCircleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0271EF84200CA04200D7F7BB /* WMFriendCircleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMFriendCircleTests.m; sourceTree = "<group>"; };
+		0271EF86200CA04200D7F7BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0271EF8B200CA04200D7F7BB /* WMFriendCircleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WMFriendCircleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0271EF8F200CA04200D7F7BB /* WMFriendCircleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMFriendCircleUITests.m; sourceTree = "<group>"; };
+		0271EF91200CA04200D7F7BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0271EF9F200CA0EE00D7F7BB /* OCTCircleCommentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTCircleCommentModel.h; sourceTree = "<group>"; };
+		0271EFA0200CA0EE00D7F7BB /* OCTCircleCommentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTCircleCommentModel.m; sourceTree = "<group>"; };
+		0271EFA1200CA0EE00D7F7BB /* OCTCircleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTCircleModel.h; sourceTree = "<group>"; };
+		0271EFA2200CA0EE00D7F7BB /* OCTCircleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTCircleModel.m; sourceTree = "<group>"; };
+		0271EFA4200CA0EE00D7F7BB /* OCTMediaManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTMediaManager.h; sourceTree = "<group>"; };
+		0271EFA5200CA0EE00D7F7BB /* OCTMediaManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTMediaManager.m; sourceTree = "<group>"; };
+		0271EFA6200CA0EE00D7F7BB /* OCTMediaModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTMediaModel.h; sourceTree = "<group>"; };
+		0271EFA7200CA0EE00D7F7BB /* OCTMediaModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTMediaModel.m; sourceTree = "<group>"; };
+		0271EFA8200CA0EE00D7F7BB /* UIView+MediaExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MediaExt.h"; sourceTree = "<group>"; };
+		0271EFA9200CA0EE00D7F7BB /* UIView+MediaExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MediaExt.m"; sourceTree = "<group>"; };
+		0271EFAA200CA0EE00D7F7BB /* OCTAddDynamicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTAddDynamicViewController.h; sourceTree = "<group>"; };
+		0271EFAB200CA0EE00D7F7BB /* OCTAddDynamicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTAddDynamicViewController.m; sourceTree = "<group>"; };
+		0271EFAC200CA0EE00D7F7BB /* OCTBaseCircleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTBaseCircleViewController.h; sourceTree = "<group>"; };
+		0271EFAD200CA0EE00D7F7BB /* OCTBaseCircleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTBaseCircleViewController.m; sourceTree = "<group>"; };
+		0271EFAF200CA0EE00D7F7BB /* OCTMediaCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTMediaCell.h; sourceTree = "<group>"; };
+		0271EFB0200CA0EE00D7F7BB /* OCTMediaCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTMediaCell.m; sourceTree = "<group>"; };
+		0271EFB1200CA0EE00D7F7BB /* OCTSelectMediaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTSelectMediaView.h; sourceTree = "<group>"; };
+		0271EFB2200CA0EE00D7F7BB /* OCTSelectMediaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTSelectMediaView.m; sourceTree = "<group>"; };
+		0271EFB4200CA0EE00D7F7BB /* OCTCircleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTCircleCell.h; sourceTree = "<group>"; };
+		0271EFB5200CA0EE00D7F7BB /* OCTCircleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTCircleCell.m; sourceTree = "<group>"; };
+		0271EFB6200CA0EE00D7F7BB /* OCTCountCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTCountCell.h; sourceTree = "<group>"; };
+		0271EFB7200CA0EE00D7F7BB /* OCTCountCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTCountCell.m; sourceTree = "<group>"; };
+		0271EFB8200CA0EE00D7F7BB /* OCTCountTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTCountTextView.h; sourceTree = "<group>"; };
+		0271EFB9200CA0EE00D7F7BB /* OCTCountTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTCountTextView.m; sourceTree = "<group>"; };
+		0271EFBA200CA0EE00D7F7BB /* OCTPictureImgControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTPictureImgControl.h; sourceTree = "<group>"; };
+		0271EFBB200CA0EE00D7F7BB /* OCTPictureImgControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTPictureImgControl.m; sourceTree = "<group>"; };
+		0271EFC3200CA15200D7F7BB /* OCTMember.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTMember.h; sourceTree = "<group>"; };
+		0271EFC4200CA15200D7F7BB /* OCTMember.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTMember.m; sourceTree = "<group>"; };
+		0271EFC9200CA1E400D7F7BB /* OCTTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTTextView.m; sourceTree = "<group>"; };
+		0271EFCA200CA1E400D7F7BB /* OCTTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTTextView.h; sourceTree = "<group>"; };
+		0271EFCF200CA26F00D7F7BB /* OCT.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCT.pch; sourceTree = "<group>"; };
+		0F2DE7968CE9C6F460A012D0 /* libPods-WMFriendCircleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WMFriendCircleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54758A0B7ED55BAA8B510568 /* libPods-WMFriendCircleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WMFriendCircleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A6F35FE4D6DE486B1EB404F /* Pods-WMFriendCircleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMFriendCircleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WMFriendCircleUITests/Pods-WMFriendCircleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		98747D80D46FE75CD4A4BE64 /* Pods-WMFriendCircleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMFriendCircleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WMFriendCircleUITests/Pods-WMFriendCircleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D57C761480170223DA72DBD3 /* Pods-WMFriendCircle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMFriendCircle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WMFriendCircle/Pods-WMFriendCircle.debug.xcconfig"; sourceTree = "<group>"; };
+		DA6EE85919A9F8A97FDA37F8 /* Pods-WMFriendCircleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMFriendCircleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WMFriendCircleTests/Pods-WMFriendCircleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC6AD084858DF2B844299651 /* libPods-WMFriendCircle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WMFriendCircle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E03DFB9955A434724C42D556 /* Pods-WMFriendCircleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMFriendCircleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WMFriendCircleTests/Pods-WMFriendCircleTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5449AF81A584A5596E25BA3 /* Pods-WMFriendCircle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMFriendCircle.release.xcconfig"; path = "Pods/Target Support Files/Pods-WMFriendCircle/Pods-WMFriendCircle.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0271EF65200CA04100D7F7BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32DDAD665FED4EE3DED58E56 /* libPods-WMFriendCircle.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0271EF7D200CA04200D7F7BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F210D1D488B67A96C4FA81DD /* libPods-WMFriendCircleTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0271EF88200CA04200D7F7BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DAE77B203BB57C4E936965F /* libPods-WMFriendCircleUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0271EF5F200CA04100D7F7BB = {
+			isa = PBXGroup;
+			children = (
+				0271EF6A200CA04100D7F7BB /* WMFriendCircle */,
+				0271EF83200CA04200D7F7BB /* WMFriendCircleTests */,
+				0271EF8E200CA04200D7F7BB /* WMFriendCircleUITests */,
+				0271EF69200CA04100D7F7BB /* Products */,
+				39BCDA634B43070CC6429111 /* Pods */,
+				8647A4E5BEF5F3F8278AD940 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0271EF69200CA04100D7F7BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0271EF68200CA04100D7F7BB /* WMFriendCircle.app */,
+				0271EF80200CA04200D7F7BB /* WMFriendCircleTests.xctest */,
+				0271EF8B200CA04200D7F7BB /* WMFriendCircleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0271EF6A200CA04100D7F7BB /* WMFriendCircle */ = {
+			isa = PBXGroup;
+			children = (
+				0271EF6B200CA04100D7F7BB /* AppDelegate.h */,
+				0271EF6C200CA04100D7F7BB /* AppDelegate.m */,
+				0271EF6E200CA04100D7F7BB /* ViewController.h */,
+				0271EF6F200CA04100D7F7BB /* ViewController.m */,
+				0271EFCF200CA26F00D7F7BB /* OCT.pch */,
+				0271EF9D200CA0EE00D7F7BB /* OCTBaseCircle */,
+				0271EF71200CA04100D7F7BB /* Main.storyboard */,
+				0271EF74200CA04100D7F7BB /* Assets.xcassets */,
+				0271EF76200CA04100D7F7BB /* LaunchScreen.storyboard */,
+				0271EF79200CA04100D7F7BB /* Info.plist */,
+				0271EF7A200CA04100D7F7BB /* main.m */,
+			);
+			path = WMFriendCircle;
+			sourceTree = "<group>";
+		};
+		0271EF83200CA04200D7F7BB /* WMFriendCircleTests */ = {
+			isa = PBXGroup;
+			children = (
+				0271EF84200CA04200D7F7BB /* WMFriendCircleTests.m */,
+				0271EF86200CA04200D7F7BB /* Info.plist */,
+			);
+			path = WMFriendCircleTests;
+			sourceTree = "<group>";
+		};
+		0271EF8E200CA04200D7F7BB /* WMFriendCircleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0271EF8F200CA04200D7F7BB /* WMFriendCircleUITests.m */,
+				0271EF91200CA04200D7F7BB /* Info.plist */,
+			);
+			path = WMFriendCircleUITests;
+			sourceTree = "<group>";
+		};
+		0271EF9D200CA0EE00D7F7BB /* OCTBaseCircle */ = {
+			isa = PBXGroup;
+			children = (
+				0271EF9E200CA0EE00D7F7BB /* CircleModel */,
+				0271EFA3200CA0EE00D7F7BB /* libiaries */,
+				0271EFAA200CA0EE00D7F7BB /* OCTAddDynamicViewController.h */,
+				0271EFAB200CA0EE00D7F7BB /* OCTAddDynamicViewController.m */,
+				0271EFAC200CA0EE00D7F7BB /* OCTBaseCircleViewController.h */,
+				0271EFAD200CA0EE00D7F7BB /* OCTBaseCircleViewController.m */,
+				0271EFAE200CA0EE00D7F7BB /* SelectView */,
+				0271EFB3200CA0EE00D7F7BB /* View */,
+			);
+			path = OCTBaseCircle;
+			sourceTree = "<group>";
+		};
+		0271EF9E200CA0EE00D7F7BB /* CircleModel */ = {
+			isa = PBXGroup;
+			children = (
+				0271EF9F200CA0EE00D7F7BB /* OCTCircleCommentModel.h */,
+				0271EFA0200CA0EE00D7F7BB /* OCTCircleCommentModel.m */,
+				0271EFA1200CA0EE00D7F7BB /* OCTCircleModel.h */,
+				0271EFA2200CA0EE00D7F7BB /* OCTCircleModel.m */,
+				0271EFC3200CA15200D7F7BB /* OCTMember.h */,
+				0271EFC4200CA15200D7F7BB /* OCTMember.m */,
+			);
+			path = CircleModel;
+			sourceTree = "<group>";
+		};
+		0271EFA3200CA0EE00D7F7BB /* libiaries */ = {
+			isa = PBXGroup;
+			children = (
+				0271EFCA200CA1E400D7F7BB /* OCTTextView.h */,
+				0271EFC9200CA1E400D7F7BB /* OCTTextView.m */,
+				0271EFA4200CA0EE00D7F7BB /* OCTMediaManager.h */,
+				0271EFA5200CA0EE00D7F7BB /* OCTMediaManager.m */,
+				0271EFA6200CA0EE00D7F7BB /* OCTMediaModel.h */,
+				0271EFA7200CA0EE00D7F7BB /* OCTMediaModel.m */,
+				0271EFA8200CA0EE00D7F7BB /* UIView+MediaExt.h */,
+				0271EFA9200CA0EE00D7F7BB /* UIView+MediaExt.m */,
+			);
+			path = libiaries;
+			sourceTree = "<group>";
+		};
+		0271EFAE200CA0EE00D7F7BB /* SelectView */ = {
+			isa = PBXGroup;
+			children = (
+				0271EFAF200CA0EE00D7F7BB /* OCTMediaCell.h */,
+				0271EFB0200CA0EE00D7F7BB /* OCTMediaCell.m */,
+				0271EFB1200CA0EE00D7F7BB /* OCTSelectMediaView.h */,
+				0271EFB2200CA0EE00D7F7BB /* OCTSelectMediaView.m */,
+			);
+			path = SelectView;
+			sourceTree = "<group>";
+		};
+		0271EFB3200CA0EE00D7F7BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0271EFB4200CA0EE00D7F7BB /* OCTCircleCell.h */,
+				0271EFB5200CA0EE00D7F7BB /* OCTCircleCell.m */,
+				0271EFB6200CA0EE00D7F7BB /* OCTCountCell.h */,
+				0271EFB7200CA0EE00D7F7BB /* OCTCountCell.m */,
+				0271EFB8200CA0EE00D7F7BB /* OCTCountTextView.h */,
+				0271EFB9200CA0EE00D7F7BB /* OCTCountTextView.m */,
+				0271EFBA200CA0EE00D7F7BB /* OCTPictureImgControl.h */,
+				0271EFBB200CA0EE00D7F7BB /* OCTPictureImgControl.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39BCDA634B43070CC6429111 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D57C761480170223DA72DBD3 /* Pods-WMFriendCircle.debug.xcconfig */,
+				F5449AF81A584A5596E25BA3 /* Pods-WMFriendCircle.release.xcconfig */,
+				DA6EE85919A9F8A97FDA37F8 /* Pods-WMFriendCircleTests.debug.xcconfig */,
+				E03DFB9955A434724C42D556 /* Pods-WMFriendCircleTests.release.xcconfig */,
+				6A6F35FE4D6DE486B1EB404F /* Pods-WMFriendCircleUITests.debug.xcconfig */,
+				98747D80D46FE75CD4A4BE64 /* Pods-WMFriendCircleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8647A4E5BEF5F3F8278AD940 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC6AD084858DF2B844299651 /* libPods-WMFriendCircle.a */,
+				54758A0B7ED55BAA8B510568 /* libPods-WMFriendCircleTests.a */,
+				0F2DE7968CE9C6F460A012D0 /* libPods-WMFriendCircleUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0271EF67200CA04100D7F7BB /* WMFriendCircle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0271EF94200CA04200D7F7BB /* Build configuration list for PBXNativeTarget "WMFriendCircle" */;
+			buildPhases = (
+				2F1B80E141AFB255EA46D5CC /* [CP] Check Pods Manifest.lock */,
+				0271EF64200CA04100D7F7BB /* Sources */,
+				0271EF65200CA04100D7F7BB /* Frameworks */,
+				0271EF66200CA04100D7F7BB /* Resources */,
+				495CD90FEE6CDD99A149CC6A /* [CP] Embed Pods Frameworks */,
+				6E0F6A1A302AA3B96480DD50 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WMFriendCircle;
+			productName = WMFriendCircle;
+			productReference = 0271EF68200CA04100D7F7BB /* WMFriendCircle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0271EF7F200CA04200D7F7BB /* WMFriendCircleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0271EF97200CA04200D7F7BB /* Build configuration list for PBXNativeTarget "WMFriendCircleTests" */;
+			buildPhases = (
+				3F2626A39B3076854AD68A73 /* [CP] Check Pods Manifest.lock */,
+				0271EF7C200CA04200D7F7BB /* Sources */,
+				0271EF7D200CA04200D7F7BB /* Frameworks */,
+				0271EF7E200CA04200D7F7BB /* Resources */,
+				B34BE30F148173E25F8297E1 /* [CP] Embed Pods Frameworks */,
+				C17A5CBD8985F9B5BDFAC5ED /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0271EF82200CA04200D7F7BB /* PBXTargetDependency */,
+			);
+			name = WMFriendCircleTests;
+			productName = WMFriendCircleTests;
+			productReference = 0271EF80200CA04200D7F7BB /* WMFriendCircleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0271EF8A200CA04200D7F7BB /* WMFriendCircleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0271EF9A200CA04200D7F7BB /* Build configuration list for PBXNativeTarget "WMFriendCircleUITests" */;
+			buildPhases = (
+				F63D843FE92BAF6722A42BB4 /* [CP] Check Pods Manifest.lock */,
+				0271EF87200CA04200D7F7BB /* Sources */,
+				0271EF88200CA04200D7F7BB /* Frameworks */,
+				0271EF89200CA04200D7F7BB /* Resources */,
+				57F544D7514EC0779EBC46A0 /* [CP] Embed Pods Frameworks */,
+				FD136F7541C56DCEB16CDF54 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0271EF8D200CA04200D7F7BB /* PBXTargetDependency */,
+			);
+			name = WMFriendCircleUITests;
+			productName = WMFriendCircleUITests;
+			productReference = 0271EF8B200CA04200D7F7BB /* WMFriendCircleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0271EF60200CA04100D7F7BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = oct;
+				TargetAttributes = {
+					0271EF67200CA04100D7F7BB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					0271EF7F200CA04200D7F7BB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0271EF67200CA04100D7F7BB;
+					};
+					0271EF8A200CA04200D7F7BB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0271EF67200CA04100D7F7BB;
+					};
+				};
+			};
+			buildConfigurationList = 0271EF63200CA04100D7F7BB /* Build configuration list for PBXProject "WMFriendCircle" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0271EF5F200CA04100D7F7BB;
+			productRefGroup = 0271EF69200CA04100D7F7BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0271EF67200CA04100D7F7BB /* WMFriendCircle */,
+				0271EF7F200CA04200D7F7BB /* WMFriendCircleTests */,
+				0271EF8A200CA04200D7F7BB /* WMFriendCircleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0271EF66200CA04100D7F7BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0271EF78200CA04100D7F7BB /* LaunchScreen.storyboard in Resources */,
+				0271EF75200CA04100D7F7BB /* Assets.xcassets in Resources */,
+				0271EF73200CA04100D7F7BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0271EF7E200CA04200D7F7BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0271EF89200CA04200D7F7BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F1B80E141AFB255EA46D5CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3F2626A39B3076854AD68A73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		495CD90FEE6CDD99A149CC6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMFriendCircle/Pods-WMFriendCircle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57F544D7514EC0779EBC46A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMFriendCircleUITests/Pods-WMFriendCircleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E0F6A1A302AA3B96480DD50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMFriendCircle/Pods-WMFriendCircle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B34BE30F148173E25F8297E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMFriendCircleTests/Pods-WMFriendCircleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C17A5CBD8985F9B5BDFAC5ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMFriendCircleTests/Pods-WMFriendCircleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F63D843FE92BAF6722A42BB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD136F7541C56DCEB16CDF54 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WMFriendCircleUITests/Pods-WMFriendCircleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0271EF64200CA04100D7F7BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0271EFD2200CA3A900D7F7BB /* OCTCircleCell.m in Sources */,
+				0271EFD1200CA39D00D7F7BB /* OCTSelectMediaView.m in Sources */,
+				0271EFD0200CA39B00D7F7BB /* OCTMediaCell.m in Sources */,
+				0271EFC1200CA10200D7F7BB /* OCTCircleCommentModel.m in Sources */,
+				0271EFCB200CA1E400D7F7BB /* OCTTextView.m in Sources */,
+				0271EF70200CA04100D7F7BB /* ViewController.m in Sources */,
+				0271EFC0200CA0FE00D7F7BB /* UIView+MediaExt.m in Sources */,
+				0271EFBD200CA0F700D7F7BB /* OCTAddDynamicViewController.m in Sources */,
+				0271EFD3200CA3AB00D7F7BB /* OCTCountCell.m in Sources */,
+				0271EF7B200CA04100D7F7BB /* main.m in Sources */,
+				0271EFBE200CA0FA00D7F7BB /* OCTMediaManager.m in Sources */,
+				0271EFBF200CA0FD00D7F7BB /* OCTMediaModel.m in Sources */,
+				0271EFBC200CA0F400D7F7BB /* OCTBaseCircleViewController.m in Sources */,
+				0271EFD4200CA3AD00D7F7BB /* OCTCountTextView.m in Sources */,
+				0271EFC5200CA15200D7F7BB /* OCTMember.m in Sources */,
+				0271EFD5200CA3AF00D7F7BB /* OCTPictureImgControl.m in Sources */,
+				0271EFC2200CA10400D7F7BB /* OCTCircleModel.m in Sources */,
+				0271EF6D200CA04100D7F7BB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0271EF7C200CA04200D7F7BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0271EF85200CA04200D7F7BB /* WMFriendCircleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0271EF87200CA04200D7F7BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0271EF90200CA04200D7F7BB /* WMFriendCircleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0271EF82200CA04200D7F7BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0271EF67200CA04100D7F7BB /* WMFriendCircle */;
+			targetProxy = 0271EF81200CA04200D7F7BB /* PBXContainerItemProxy */;
+		};
+		0271EF8D200CA04200D7F7BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0271EF67200CA04100D7F7BB /* WMFriendCircle */;
+			targetProxy = 0271EF8C200CA04200D7F7BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0271EF71200CA04100D7F7BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0271EF72200CA04100D7F7BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0271EF76200CA04100D7F7BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0271EF77200CA04100D7F7BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0271EF92200CA04200D7F7BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0271EF93200CA04200D7F7BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0271EF95200CA04200D7F7BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D57C761480170223DA72DBD3 /* Pods-WMFriendCircle.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 592S8M6KEP;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/OCT.pch";
+				INFOPLIST_FILE = WMFriendCircle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ssoct..WMFriendCircle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0271EF96200CA04200D7F7BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5449AF81A584A5596E25BA3 /* Pods-WMFriendCircle.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 592S8M6KEP;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/OCT.pch";
+				INFOPLIST_FILE = WMFriendCircle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ssoct..WMFriendCircle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0271EF98200CA04200D7F7BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA6EE85919A9F8A97FDA37F8 /* Pods-WMFriendCircleTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 592S8M6KEP;
+				INFOPLIST_FILE = WMFriendCircleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ssoct..WMFriendCircleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WMFriendCircle.app/WMFriendCircle";
+			};
+			name = Debug;
+		};
+		0271EF99200CA04200D7F7BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E03DFB9955A434724C42D556 /* Pods-WMFriendCircleTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 592S8M6KEP;
+				INFOPLIST_FILE = WMFriendCircleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ssoct..WMFriendCircleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WMFriendCircle.app/WMFriendCircle";
+			};
+			name = Release;
+		};
+		0271EF9B200CA04200D7F7BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A6F35FE4D6DE486B1EB404F /* Pods-WMFriendCircleUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 592S8M6KEP;
+				INFOPLIST_FILE = WMFriendCircleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ssoct..WMFriendCircleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WMFriendCircle;
+			};
+			name = Debug;
+		};
+		0271EF9C200CA04200D7F7BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98747D80D46FE75CD4A4BE64 /* Pods-WMFriendCircleUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 592S8M6KEP;
+				INFOPLIST_FILE = WMFriendCircleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ssoct..WMFriendCircleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WMFriendCircle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0271EF63200CA04100D7F7BB /* Build configuration list for PBXProject "WMFriendCircle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0271EF92200CA04200D7F7BB /* Debug */,
+				0271EF93200CA04200D7F7BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0271EF94200CA04200D7F7BB /* Build configuration list for PBXNativeTarget "WMFriendCircle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0271EF95200CA04200D7F7BB /* Debug */,
+				0271EF96200CA04200D7F7BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0271EF97200CA04200D7F7BB /* Build configuration list for PBXNativeTarget "WMFriendCircleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0271EF98200CA04200D7F7BB /* Debug */,
+				0271EF99200CA04200D7F7BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0271EF9A200CA04200D7F7BB /* Build configuration list for PBXNativeTarget "WMFriendCircleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0271EF9B200CA04200D7F7BB /* Debug */,
+				0271EF9C200CA04200D7F7BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0271EF60200CA04100D7F7BB /* Project object */;
+}
